@@ -1,0 +1,337 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'rubik', sans-serif;
+}
+
+body{
+    background-color: #F4F6FA;
+    background-image: url(./images/pattern-background-desktop-light.svg);
+    min-height: 100vh;
+    background-image: cover;
+    width: 100%;
+    padding: 100px;
+}
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    margin-right: 30px;
+}
+
+.subject p{
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.subject img{
+    margin-top: 20px;
+}
+
+#my-countdown{
+    padding-right: 10px;
+    font: 500;
+    font-weight: 600;
+    font-size: 70px;
+    color: red;
+
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    padding:30px;
+}
+
+.question-col{
+    width: 60%;
+    margin-top: 70px;
+}
+
+.question-col #welcome{
+    font-size: 60px;
+    font-weight: 100;
+    color: #5c5c5c;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+
+#question-col-red{
+    color: red;
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding:20px
+}
+
+#question-col-p{
+    font-size: 60px;
+    font-weight: 500;
+    color: #070707;
+    letter-spacing: 1px
+}
+.question-col h5{
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 40px;
+    color: #5c5c5c;
+    margin-left: 15px;
+    font-size: 20px;
+
+}
+.answer-col{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    position: relative;
+    top: 50px;
+}
+
+.answer-col img{
+    padding-left: 20px;
+    padding-right:20px;
+    width: 70px;
+}
+
+.answer-col1{
+    display: flex;
+    align-items: center;
+}
+
+#answer-buttons{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.btn{
+    cursor: pointer;
+    margin-bottom: 15px;
+    height: 80px;
+    font-family: 'rubik';
+    border-radius: 20px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    text-align: left;
+    font-weight: 500;
+    color: #5c5c5c;
+    padding: 30px;
+    transition:0.2s;
+}
+
+.btn:hover:not([disabled]){
+    color: #A729F5;
+    border: 5px solid #A729F5;
+}
+
+
+
+.btn1{
+    cursor: pointer;
+    margin-bottom: 15px;
+    height: 80px;
+    font-family: 'rubik';
+    border-radius: 20px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    text-align: left;
+    font-weight: 500;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.subject{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    padding-left: 130px;
+}
+
+#question{
+    font-size: 35px;
+    font-weight: 500;
+    color: #5c5c5c;
+    margin-top: 20px;
+}
+
+.btn2{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+    height: 80px;
+    font-family: 'rubik';
+    border-radius: 20px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    text-align: left;
+    font-weight: 500;
+    color: #5c5c5c;
+    padding-left: 20px;
+}
+
+.btn2:hover{
+    border: 3px #A729F5 solid;
+    transition: 0.1s;
+}
+
+.btn2 p{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #5c5c5c;
+}
+
+.btn2 p:hover{
+    color: #A729F5;
+    transition: 1s;
+}
+
+.next-button{
+    display: flex;
+    flex-direction: column;
+}
+
+#next-btn{
+    background-color:#A729F5;
+    color: #fff;
+    border: none;
+    outline: none;
+    height: 80px;
+    width: 780px;
+    font-size: 24px;
+    border-radius: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+    position: absolute;
+    left: 50%;
+}
+
+#next-btn:hover{
+    background-color: #ccc;
+    transition:0.2s ;
+}
+
+.correct{
+    background:#9aeabc;
+}
+
+.incorrect{
+    background: #ff9393;
+}
+
+.btn11{
+    padding: 30px;
+    text-align: center;
+    background: #A729F5;
+    transition: 0.1s;
+    color: #fff;
+    background-color:#A729F5;
+    border: none;
+    outline: none;
+    height: 80px;
+    width: 200px;
+    font-size: 24px;
+    border-radius: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+}
+
+.btn11:hover{
+    background-color: #ccc;
+    transition:0.3s;
+}
+
+#signup-form{
+    display: flex;
+    flex-direction:column;
+    width: 500px;
+}
+
+#signup-name{
+    text-align: center;
+    font: 500;
+    font-size: 50px;
+    padding-bottom: 20px;
+    color: #A729F5;
+}
+
+#username{
+    margin: 10px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size:20px;
+}
+
+#password{
+    margin: 10px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size:20px;
+}
+
+
+#signup-form button{
+    margin: 10px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size:20px;
+    background-color: #A729F5;
+    color: #fff;
+    font-weight: 500;
+}
+
+#signup-form button:hover{
+    background-color: #ccc;
+    color:#5c5c5c;
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form button{
+    margin: 10px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size:20px;
+    background-color: #A729F5;
+    color: #fff;
+    font-weight: 500;
+}
+
+#login-form button:hover{
+    background-color: #ccc;
+    color:#5c5c5c;
+}

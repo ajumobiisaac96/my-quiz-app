@@ -1,0 +1,63 @@
+
+<!-- signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<title>Sign Up</title>
+</head>
+<body>
+
+
+
+
+<div class="hero">
+    <div class="question-col">
+        <p id="welcome">welcome to the</p>
+        <!-- <p id="question-col-red">Web-3 Bridge </p><br>  -->
+        <p id="question-col-p">Frontend Quiz!</p>
+        <h5>pick a subject to get started.</h5>
+    </div>
+    <div class="answer-col">
+        <form id="signup-form">
+            <h2 id="signup-name">signup</h2>
+          <input id="username" type="text" id="username" placeholder="Username" required>
+          <input id="password" type="password" id="password" placeholder="Password" required>
+          <button id="signup-submit" type="submit">Sign Up</button>
+        </form>
+    </div>
+</div> 
+</div> 
+
+
+
+<script>
+    document.getElementById('signup-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Check if user already exists
+    if (localStorage.getItem(username)) {
+        alert('Username already exists. Please choose a different one.');
+        return;
+    }
+
+    // Store user credentials in local storage
+    localStorage.setItem(username, password);
+
+    alert('Sign up successful. You can now log in.');
+    // Redirect to login page
+    window.location.href = 'login.html';
+});
+
+</script>
+
+</body>
+</html>

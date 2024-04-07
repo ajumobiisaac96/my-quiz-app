@@ -1,0 +1,55 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+<title>Login</title>
+</head>
+<body>
+
+
+<div class="hero">
+    <div class="question-col">
+        <p id="welcome">welcome to the</p>
+        <p id="question-col-p">Frontend Quiz!</p>
+        <h5>pick a subject to get started.</h5>
+    </div>
+    <div class="answer-col">
+        <form id="login-form">
+            <h2 id="signup-name">Login</h2>
+          <input type="text" id="username" placeholder="Username" required>
+          <input type="password" id="password" placeholder="Password" required>
+          <button id="signup-submit" type="submit">Login</button>
+        </form>
+    </div>
+</div> 
+</div> 
+<script>
+
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Retrieve user credentials from local storage
+    const storedPassword = localStorage.getItem(username);
+
+    if (storedPassword && storedPassword === password) {
+        alert('Login successful. Welcome, ' + username + '!');
+        // Redirect to dashboard or home page
+        window.location.href = 'index.html';
+    } else {
+        alert('Invalid username or password.');
+    }
+});
+</script>
+
+</body>
+</html>
