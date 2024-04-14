@@ -137,7 +137,8 @@ function selectAnswer(e){
         }
         button.disabled = true;
     });
-    nextButton.style.display = "block"
+    nextButton.style.display = "flex"
+
 };
 
 function showScore(){                                                                                                                                                                                   
@@ -147,33 +148,77 @@ function showScore(){
     timeH.style.display = "none";
 
     // var divElement = document.createElement('div');
-    questionElement.style.width = "500px";
-    questionElement.style.height = "300px";
-    questionElement.style.position = "absolute";
-    questionElement.style.background = "#ccc";
-    questionElement.style.transform = "translate(-50%,-50%)";
-    questionElement.style.top = "50%"
-    questionElement.style.left = "50%"
-    questionElement.textContent   = `you scored ${score} out of ${questions.length}.`
-    questionElement.style.textAlign = "center";
-    questionElement.style.padding = "50px";
-    questionElement.style.fontSize= "50px"
-    questionElement.style.color= "#070707";
-    questionElement.style.borderRadius= "20px";
-    questionElement.style.fontWeight= "500";
-   
-    const button = document.createElement("button");
-    button.innerHTML = "Play Again";
-    button.classList.add("btn11");
-    questionElement.appendChild(button);
-    // document.body.appendChild(divElement);
+    function media(x){
+        if (x.matches){
+            questionElement.style.width = "300px";
+            questionElement.style.height = "400px";
+            questionElement.style.display = "flex";
+            questionElement.style.background = "#ccc";
+            questionElement.style.alignItems = "center";
+            questionElement.style.justifyContent = "center"
+            questionElement.textContent   = `you scored ${score} out of ${questions.length}.`
+            questionElement.style.textAlign = "center";
+            questionElement.style.padding = "10px";
+            questionElement.style.fontSize= "50px"
+            questionElement.style.color= "#070707";
+            questionElement.style.borderRadius= "20px";
+            questionElement.style.fontWeight= "500";
+            
+           
+            const button = document.createElement("button");
+            button.innerHTML = "Play Again";
+            button.classList.add("btn11");
+            questionElement.appendChild(button);
+            // document.body.appendChild(divElement);
+        
+        
+            button.addEventListener('click', () =>{
+                window.location.href = "index.html";
+
+            })
+        
+        } 
+        else{
+            
+            questionElement.style.width = "500px";
+            questionElement.style.height = "300px";
+            questionElement.style.position = "absolute";
+            questionElement.style.background = "#ccc";
+            questionElement.style.transform = "translate(-50%,-50%)";
+            questionElement.style.top = "50%"
+            questionElement.style.left = "50%"
+            questionElement.textContent   = `you scored ${score} out of ${questions.length}.`
+            questionElement.style.textAlign = "center";
+            questionElement.style.padding = "50px";
+            questionElement.style.fontSize= "50px"
+            questionElement.style.color= "#070707";
+            questionElement.style.borderRadius= "20px";
+            questionElement.style.fontWeight= "500";
+           
+            const button = document.createElement("button");
+            button.innerHTML = "Play Again";
+            button.classList.add("btn11");
+            questionElement.appendChild(button);
+            // document.body.appendChild(divElement);
+        
+        
+            button.addEventListener('click', () =>{
+                window.location.href = "index.html";
+            })
+        }
+        }
+
+        
+        var x = window.matchMedia("(max-width : 900px)")
+        media(x);
+        x.addEventListener("change",function(){
+            media(x)
+        });
 
 
-    button.addEventListener('click', () =>{
-        window.location.href = "index.html";
-    })
+    }
+    
 
-}
 
 function handleNextButton(){
     currentQuestionIndex++;
