@@ -1,6 +1,6 @@
 
-function htmlQuestions(){
-    window.location.href = "html.html";
+function cssQuestions(){
+    window.location.href = "cssQuestion.html";
     startQuiz();
 }
 
@@ -36,141 +36,143 @@ function endCount() {
 
 const questions = [
     {
-        question: "In HTML, what does the fieldset tag do?",
+        question: " What is JavaScript??",
         answers:[
-            {text: "A.  It is used to group related data in a form.", correct: true},
-            {text: "B.  It sets the field to a fixed size.", correct: false},
-            {text: "C.  It automatically validates the fields within a form.", correct: false},
-            {text: "D.  It hides the fields in a form.", correct: false},
+            {text: "A.   JavaScript is a scripting language used to make the website interactive.", correct: true},
+            {text: "B.   JavaScript is an assembly language used to make the website interactive.", correct: false},
+            {text: "C.  JavaScript is a compiled language used to make the website interactive.", correct: false},
+            {text: "D.  None of the mentioned.", correct: false},
         ]
     },
     {
-        question: "What does HTML stand for?",
+        question: " Which of the following CSS selectors are used to specify a group of elements?",
         answers:[
-            {text: "A.  Hyper Trainer Marking Language", correct: false},
-            {text: "B.  Hyper Text Marketing Language", correct: false},
-            {text: "C.  Hyper Text Markup Language", correct: true},
-            {text: "D.  Hyper Text Markup Leveler", correct: false},
+            {text: "A.  tag", correct: false},
+            {text: "B.  id", correct: false},
+            {text: "C.  class", correct: true},
+            {text: "D.  both class and tag", correct: false},
         ]
     },
     {
-        question: "Which HTML element is used to define the title of a document?",
+        question: "Which of the following is correct about JavaScript?",
         answers:[
-            {text: "A.  head", correct: false},
-            {text: "B.  title", correct: true},
-            {text: "C.  header", correct: false},
-            {text: "D.  top", correct: false},
+            {text: "A.  JavaScript is an Object-Based language", correct: true},
+            {text: "B. JavaScript is Assembly-language", correct: false},
+            {text: "C. JavaScript is an Object-Oriented language JavaScript is an Object-Oriented language", correct: false},
+            {text: "D.  JavaScript is a High-level language", correct: false},
         ]
     },
     {
-        question: "What is the purpose of the <body> tag in HTML?",
+        question: " Among the given statements, which statement defines closures in JavaScript?",
         answers:[
-            {text: "A.  It defines the document's head section.", correct: false},
-            {text: "B.  It contains all the content such as text, images, and links.", correct: true},
-            {text: "C.  It is used to define the main content of an HTML document.", correct: false},
-            {text: "D.  It specifies the body of the email content in HTML.", correct: false},
+            {text: "A.  JavaScript is a function that is enclosed with references to its inner function scope.", correct: false},
+            {text: "B.  JavaScript is a function that is enclosed with references to its lexical environment.", correct: true},
+            {text: "C. JavaScript is a function that is enclosed with the object to its inner function scope.", correct: false},
+            {text: "D.  None of the mentioned.", correct: false},
         ]
     },
     {
-        question: "What is the purpose of the <body> tag in HTML?",
+        question: " Arrays in JavaScript are defined by which of the following statements?",
         answers:[
-            {text: "A.  It defines the document's head section.", correct: false},
-            {text: "B.  It contains all the content such as text, images, and links.", correct: true},
-            {text: "C.  It is used to define the main content of an HTML document.", correct: false},
-            {text: "D.  It specifies the body of the email content in HTML.", correct: false},
+            {text: "A.  It is an ordered list of values.", correct: false},
+            {text: "B.  It is an ordered list of objects.", correct: true},
+            {text: "C.  It is an ordered list of string.", correct: false},
+            {text: "D.  It is an ordered list of functions.", correct: false},
         ]
     },
 {
-        question: "What is HTML?",
+        question: " Which of the following is not javascript data types?",
         answers:[
-            {text: "A.  HTML describes the structure of a webpage.", correct: false},
-            {text: "B.  HTML is the standard markup language mainly used to create web pages.", correct: false},
-            {text: "C.  HTML consists of a set of elements that helps the browser how to view the content.", correct: false},
-            {text: "D.  All of the mentioned.", correct: true},
+            {text: "A.  Null type.", correct: false},
+            {text: "B.  Undefined type.", correct: false},
+            {text: "C.  Number type.", correct: false},
+            {text: "D. All of the mentioned.", correct: true},
         ]
     },
 {
-        question: " Who is the father of HTML?",
+        question: " Where is Client-side JavaScript code is embedded within HTML documents?",
         answers:[
-            {text: "A.  Rasmus Lerdorf.", correct: false},
-            {text: "B.  Tim Berners-Lee.", correct: true},
-            {text: "C.  Brendan Eich.", correct: false},
-            {text: "D.  Sergey Brin.", correct: false},
+            {text: "A.  A URL that uses the special javascript:code.", correct: false},
+            {text: "B.  A URL that uses the special javascript:protocol.", correct: true},
+            {text: "C.  A URL that uses the special javascript:encoding.", correct: false},
+            {text: "D.  A URL that uses the special javascript:stack.", correct: false},
         ]
     },
 {
-        question: "  HTML stands for __________?",
+        question: "  Which of the following object is the main entry point to all client-side JavaScript features and APIs?",
         answers:[
-            {text: "A.  Hyper Text Markup Language.", correct: true},
-            {text: "B.  HyperText Machine Language.", correct: false},
-            {text: "C.  HyperText Marking Language.", correct: false},
-            {text: "D.  HighText Marking Language.", correct: false},
+            {text: "A.  position.", correct: false},
+            {text: "B.  -window.", correct: true},
+            {text: "C.  standard.", correct: false},
+            {text: "D   location.", correct: false},
         ]
     },
 {
-        question: " Which of the following is used to read an HTML page and render it??",
+        question: " Which of the following can be used to call a JavaScript Code Snippet?",
         answers:[
-            {text: "A.  Web server.", correct: false},
-            {text: "B.   Web network.", correct: false},
-            {text: "C.  Web browser.", correct: true},
-            {text: "D.  Web matrix.", correct: false},
+            {text: "A.  Function/Method.", correct: false},
+            {text: "B.   Preprocessor.", correct: false},
+            {text: "C.  Triggering Event.", correct: true},
+            {text: "D.  RMI.", correct: false},
         ]
     },
 {
-        question: " Which of the following is not a difference between HTML and XHTML?",
+        question: " Which of the following explains correctly what happens when a JavaScript program is developed on a Unix Machine?",
         answers:[
-            {text: "A.  Charset in both html and xhtml is “text/html", correct: true},
-            {text: "B.  Tags and attributes are case-insensitive in HTML but not in XHTML.", correct: false},
-            {text: "C.  Special characters must be escaped using character entities in XHTML unlike HTML.", correct: false},
-            {text: "D.  Charset in html is “text/html” where as in xhtml it is “application/xml+xhtml.", correct: false},
+            {text: "A.  will work perfectly well on a Windows Machine", correct: true},
+            {text: "B.  will be displayed as JavaScript text on the browser.", correct: false},
+            {text: "C.  will throw errors and exceptions.", correct: false},
+            {text: "D.  must be restricted to a Unix Machine only:", correct: false},
         ]
     },
 {
-        question: " Which of the following tag is used for inserting the largest heading in HTML?",
+        question: " Which of the following scoping type does JavaScript use?",
         answers:[
-            {text: "A.  head.", correct: false},
-            {text: "B.  h1.", correct: true},
-            {text: "C.  h6.", correct: false},
-            {text: "D.  heading.", correct: false},
+            {text: "A.  sequential.", correct: false},
+            {text: "B.  segmenetal.", correct: false},
+            {text: "C.  lexical.", correct: true},
+            {text: "D.  literal.", correct: false},
         ]
     },
 {
-        question: "  What is DOM in HTML?",
+        question: "  What is the basic difference between JavaScript and Java?",
         answers:[
-            {text: "A.  Language dependent application programming.", correct: false},
-            {text: "B.  Hierarchy of objects in ASP.NET.", correct: false},
-            {text: "C.   Application programming interface.", correct: false},
-            {text: "D.  Convention for representing and interacting with objects in html documents.", correct: true},
+            {text: "A.  Functions are considered as fields.", correct: false},
+            {text: "B.  Functions are values, and there is no hard distinction between methods and fields.", correct: true},
+            {text: "C.   Variables are specific.", correct: false},
+            {text: "D.  There is no difference.", correct: false},
         ]
     },
 {
-        question: " In which part of the HTML metadata is contained?",
+        question: "Why JavaScript Engine is needed?",
         answers:[
-            {text: "A.  head tag .", correct: false},
-            {text: "B.  title tag.", correct: true},
-            {text: "C.  html tag.", correct: false},
-            {text: "D.  body tag.", correct: false},
+            {text: "A Both Compiling & Interpreting the JavaScript.", correct: false},
+            {text: "B.  Parsing the javascript.", correct: false},
+            {text: "C.  Interpreting the JavaScript.", correct: true},
+            {text: "D.  Compiling the JavaScript.", correct: false},
         ]
     },
 {
-        question: " Which of the following is not the element associated with the HTML table layout?",
+        question: "Which of the following methods/operation does javascript use instead of == and !=?",
         answers:[
-            {text: "A.  alignment.", correct: false},
-            {text: "B.  color.", correct: true},
-            {text: "C.  size.", correct: false},
-            {text: "D.  spanning.", correct: false},
+            {text: "A.  JavaScript uses equalto().", correct: false},
+            {text: "B.  JavaScript uses equals() and notequals() instead.", correct: false},
+            {text: "C.  JavaScript uses bitwise checking.", correct: false},
+            {text: "D.  JavaScript uses === and !== instead.", correct: true},
         ]
     },
 {
-        question: "  Which element is used for or styling HTML5 layout??",
+        question: "Why EVent handlers is needed in JS?",
         answers:[
-            {text: "A.  CSS.", correct: true},
-            {text: "B.  JQuery.", correct: false},
-            {text: "C.  JavaScript.", correct: false},
-            {text: "D.	PHP.", correct: false},
+            {text: "A.  Allows JavaScript code to alter the behaviour of windows.", correct: true},
+            {text: "B.  Adds innerHTML page to the code.", correct: false},
+            {text: "C. Change the server location.", correct: false},
+            {text: "D.	Performs handling of exceptions and occurrences.", correct: false},
         ]
     },  
 ];
+
+
 
 
 const questionElement = document.getElementById('question');

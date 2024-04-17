@@ -1,6 +1,6 @@
 
-function htmlQuestions(){
-    window.location.href = "html.html";
+function cssQuestions(){
+    window.location.href = "cssQuestion.html";
     startQuiz();
 }
 
@@ -36,141 +36,142 @@ function endCount() {
 
 const questions = [
     {
-        question: "In HTML, what does the fieldset tag do?",
+        question: " What is CSS??",
         answers:[
-            {text: "A.  It is used to group related data in a form.", correct: true},
-            {text: "B.  It sets the field to a fixed size.", correct: false},
-            {text: "C.  It automatically validates the fields within a form.", correct: false},
-            {text: "D.  It hides the fields in a form.", correct: false},
-        ]
-    },
-    {
-        question: "What does HTML stand for?",
-        answers:[
-            {text: "A.  Hyper Trainer Marking Language", correct: false},
-            {text: "B.  Hyper Text Marketing Language", correct: false},
-            {text: "C.  Hyper Text Markup Language", correct: true},
-            {text: "D.  Hyper Text Markup Leveler", correct: false},
-        ]
-    },
-    {
-        question: "Which HTML element is used to define the title of a document?",
-        answers:[
-            {text: "A.  head", correct: false},
-            {text: "B.  title", correct: true},
-            {text: "C.  header", correct: false},
-            {text: "D.  top", correct: false},
-        ]
-    },
-    {
-        question: "What is the purpose of the <body> tag in HTML?",
-        answers:[
-            {text: "A.  It defines the document's head section.", correct: false},
-            {text: "B.  It contains all the content such as text, images, and links.", correct: true},
-            {text: "C.  It is used to define the main content of an HTML document.", correct: false},
-            {text: "D.  It specifies the body of the email content in HTML.", correct: false},
-        ]
-    },
-    {
-        question: "What is the purpose of the <body> tag in HTML?",
-        answers:[
-            {text: "A.  It defines the document's head section.", correct: false},
-            {text: "B.  It contains all the content such as text, images, and links.", correct: true},
-            {text: "C.  It is used to define the main content of an HTML document.", correct: false},
-            {text: "D.  It specifies the body of the email content in HTML.", correct: false},
-        ]
-    },
-{
-        question: "What is HTML?",
-        answers:[
-            {text: "A.  HTML describes the structure of a webpage.", correct: false},
-            {text: "B.  HTML is the standard markup language mainly used to create web pages.", correct: false},
-            {text: "C.  HTML consists of a set of elements that helps the browser how to view the content.", correct: false},
+            {text: "A.   CSS is a style sheet language.", correct: false},
+            {text: "B.  CSS is designed to separate the presentation and content, including layout, colors, and fonts.", correct: false},
+            {text: "C.  CSS is the language used to style the HTML documents.", correct: false},
             {text: "D.  All of the mentioned.", correct: true},
         ]
     },
-{
-        question: " Who is the father of HTML?",
+    {
+        question: " Which of the following CSS selectors are used to specify a group of elements?",
         answers:[
-            {text: "A.  Rasmus Lerdorf.", correct: false},
-            {text: "B.  Tim Berners-Lee.", correct: true},
-            {text: "C.  Brendan Eich.", correct: false},
-            {text: "D.  Sergey Brin.", correct: false},
+            {text: "A.  tag", correct: false},
+            {text: "B.  id", correct: false},
+            {text: "C.  class", correct: true},
+            {text: "D.  both class and tag", correct: false},
+        ]
+    },
+    {
+        question: " Which of the following has introduced text, list, box, margin, border, color, and background properties?",
+        answers:[
+            {text: "A.  HTML", correct: false},
+            {text: "B. php", correct: false},
+            {text: "C.  CSS", correct: true},
+            {text: "D.  Ajax", correct: false},
+        ]
+    },
+    {
+        question: " Which of the following CSS framework is used to create a responsive design??",
+        answers:[
+            {text: "A.  django.", correct: false},
+            {text: "B.  rails.", correct: false},
+            {text: "C.  larawell.", correct: false},
+            {text: "D.  bootstrap.", correct: true},
+        ]
+    },
+    {
+        question: " Which of the following CSS selector is used to specify a rule to bind a particular unique element?",
+        answers:[
+            {text: "A.  tag.", correct: false},
+            {text: "B.  id.", correct: true},
+            {text: "C.  class.", correct: false},
+            {text: "D.  both class and tag.", correct: false},
         ]
     },
 {
-        question: "  HTML stands for __________?",
+        question: "  Which of the following CSS property is used to make the text bold?",
         answers:[
-            {text: "A.  Hyper Text Markup Language.", correct: true},
-            {text: "B.  HyperText Machine Language.", correct: false},
-            {text: "C.  HyperText Marking Language.", correct: false},
-            {text: "D.  HighText Marking Language.", correct: false},
+            {text: "A.  text-decoration: bold.", correct: false},
+            {text: "B.  font-weight: bold.", correct: true},
+            {text: "C.  font-style: bold.", correct: false},
+            {text: "D.  text-align: bold.", correct: false},
         ]
     },
 {
-        question: " Which of the following is used to read an HTML page and render it??",
+        question: " Which of the following CSS style property is used to specify an italic text?",
         answers:[
-            {text: "A.  Web server.", correct: false},
-            {text: "B.   Web network.", correct: false},
-            {text: "C.  Web browser.", correct: true},
-            {text: "D.  Web matrix.", correct: false},
+            {text: "A.  style.", correct: false},
+            {text: "B.  font.", correct: false},
+            {text: "C.  font-style.", correct: true},
+            {text: "D.  @font face.", correct: false},
         ]
     },
 {
-        question: " Which of the following is not a difference between HTML and XHTML?",
+        question: "  Which of the following are the CSS Extension Prefixes for Webkit??",
         answers:[
-            {text: "A.  Charset in both html and xhtml is “text/html", correct: true},
-            {text: "B.  Tags and attributes are case-insensitive in HTML but not in XHTML.", correct: false},
-            {text: "C.  Special characters must be escaped using character entities in XHTML unlike HTML.", correct: false},
-            {text: "D.  Charset in html is “text/html” where as in xhtml it is “application/xml+xhtml.", correct: false},
+            {text: "A.  -chrome.", correct: false},
+            {text: "B.  -web.", correct: false},
+            {text: "C.  -o-.", correct: false},
+            {text: "D   -webkit.", correct: true},
         ]
     },
 {
-        question: " Which of the following tag is used for inserting the largest heading in HTML?",
+        question: " Which of the following is the first CSS specification to become an official W3C Recommendation?",
         answers:[
-            {text: "A.  head.", correct: false},
-            {text: "B.  h1.", correct: true},
-            {text: "C.  h6.", correct: false},
-            {text: "D.  heading.", correct: false},
+            {text: "A.  CSS level 2.", correct: false},
+            {text: "B.   (X)HTML CSS.", correct: false},
+            {text: "C.  CSSS Level 1.", correct: true},
+            {text: "D.  CSS level 2.1.", correct: false},
         ]
     },
 {
-        question: "  What is DOM in HTML?",
+        question: " Which of the following function defines a linear gradient as a CSS image?",
         answers:[
-            {text: "A.  Language dependent application programming.", correct: false},
-            {text: "B.  Hierarchy of objects in ASP.NET.", correct: false},
-            {text: "C.   Application programming interface.", correct: false},
-            {text: "D.  Convention for representing and interacting with objects in html documents.", correct: true},
+            {text: "A.  gradient()", correct: false},
+            {text: "B.  linear-gradient().", correct: true},
+            {text: "C.  grayscale.", correct: false},
+            {text: "D.  image().", correct: false},
         ]
     },
 {
-        question: " In which part of the HTML metadata is contained?",
+        question: " Which of the following CSS property can be used to set the image as a border instead of the border style?",
         answers:[
-            {text: "A.  head tag .", correct: false},
-            {text: "B.  title tag.", correct: true},
-            {text: "C.  html tag.", correct: false},
-            {text: "D.  body tag.", correct: false},
+            {text: "A.  background-image-source.", correct: false},
+            {text: "B.  background-image.", correct: false},
+            {text: "C.  border-image-source.", correct: true},
+            {text: "D.  border-image.", correct: false},
         ]
     },
 {
-        question: " Which of the following is not the element associated with the HTML table layout?",
+        question: "  Which of the following CSS property defines the different properties of all four sides of an element’s border in a single declaration?",
         answers:[
-            {text: "A.  alignment.", correct: false},
+            {text: "A.  border-collapse.", correct: false},
+            {text: "B.  border-width.", correct: true},
+            {text: "C.   padding.", correct: false},
+            {text: "D.  border.", correct: false},
+        ]
+    },
+{
+        question: "  Which of the following is the correct way to apply CSS Styles?",
+        answers:[
+            {text: "A.  in an external CSS file.", correct: false},
+            {text: "B.  inside an HTML element.", correct: false},
+            {text: "C.  inside the <head> section of an HTML page.", correct: false},
+            {text: "D.  all of the mentioned.", correct: true},
+        ]
+    },
+{
+        question: " Which of the following CSS property sets the font size of text?",
+        answers:[
+            {text: "A.  font-size.", correct: true},
+            {text: "B.  text-size.", correct: false},
+            {text: "C.  text.", correct: false},
+            {text: "D.  size.", correct: false},
+        ]
+    },
+{
+        question: "Which of the following is not the property of the CSS box model??",
+        answers:[
+            {text: "A.  margin.", correct: false},
             {text: "B.  color.", correct: true},
-            {text: "C.  size.", correct: false},
-            {text: "D.  spanning.", correct: false},
-        ]
-    },
-{
-        question: "  Which element is used for or styling HTML5 layout??",
-        answers:[
-            {text: "A.  CSS.", correct: true},
-            {text: "B.  JQuery.", correct: false},
-            {text: "C.  JavaScript.", correct: false},
-            {text: "D.	PHP.", correct: false},
+            {text: "C.  width.", correct: false},
+            {text: "D.	height.", correct: false},
         ]
     },  
 ];
+
 
 
 const questionElement = document.getElementById('question');

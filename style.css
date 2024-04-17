@@ -102,6 +102,16 @@ body{
     top: 50px;
 }
 
+#css-link{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    position: relative;
+    top: 1px;
+    text-decoration: none;
+}
+
 .answer-col img{
     padding-left: 20px;
     padding-right:20px;
@@ -114,6 +124,15 @@ body{
 }
 
 #answer-buttons{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+}
+
+#css-answer-buttons{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -169,6 +188,13 @@ body{
 }
 
 #question{
+    font-size: 35px;
+    font-weight: 500;
+    color: #5c5c5c;
+    margin-top: 20px;
+}
+
+#cssquestion{
     font-size: 35px;
     font-weight: 500;
     color: #5c5c5c;
@@ -440,6 +466,14 @@ body{
         background: #ff9393;
     }
 
+    .answer-col a{
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 40px;;
+        text-decoration: none;;
+    }
+
     #answer-buttons{
         width: 50%;
         display: flex;
@@ -502,7 +536,12 @@ body{
         position: absolute;
         bottom: 0;
         left: 90px;
-        
+    }
+
+    #signup-form p{
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
 }
