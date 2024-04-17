@@ -313,6 +313,11 @@ body{
     margin-top: 15px;
 }
 
+#login-form p{
+    text-align: center;
+    margin-top: 15px;
+}
+
 #username{
     margin: 10px;
     height: 50px;
@@ -544,4 +549,9 @@ body{
         margin-bottom: 15px;
     }
 
+    #login-form p{
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }
